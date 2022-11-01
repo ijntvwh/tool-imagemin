@@ -4,3 +4,4 @@ dist
 pnpm-lock.yaml
 /origin/*
 !/origin/.gitkeep
+qiniu.env

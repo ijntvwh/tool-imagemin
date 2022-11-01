@@ -3,6 +3,8 @@
     "composite": true,
     "moduleResolution": "node",
     "target": "ESNext",
-    "module": "ESNext"
-  }
+    "module": "ESNext",
+    "esModuleInterop": true
+  },
+  "include": ["cdn/refresh.mts"]
 }
