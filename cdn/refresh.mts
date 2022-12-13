@@ -14,7 +14,7 @@ const mac = new qiniu.auth.digest.Mac(accessKey, secretKey)
 const cdnManager = new qiniu.cdn.CdnManager(mac)
 
 const files = [
-  'ar/map.jpg',
+  'ar/test/board.gltf',
 ]
 
 

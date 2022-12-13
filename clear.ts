@@ -11,3 +11,6 @@ function removeDirFile(dir) {
 
 removeDirFile('dist')
 removeDirFile('origin')
+removeDirFile('sprites/input')
+removeDirFile('sprites/output')
+
