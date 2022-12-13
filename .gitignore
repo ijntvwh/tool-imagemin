@@ -2,8 +2,7 @@ node_modules
 dist
 .DS_Store
 pnpm-lock.yaml
-/origin/*
-/sprites/input
-/sprites/output
+input
+output
 !.gitkeep
 qiniu.env

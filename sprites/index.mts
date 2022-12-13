@@ -14,7 +14,7 @@ const cssName = 'sprite.css'
 const spriteData = gulp.src(DIR + '/input/*.png').pipe(spritesmith({ imgName, cssName, algorithm: 'left-right' }))
 const imgStream = spriteData.img
   .pipe(buffer())
-  .pipe(imagemin([gifsicle(), mozjpeg(), optipng({ optimizationLevel: 4 }), svgo(), imageminWebp()], { verbose: true }))
+  .pipe(imagemin([gifsicle(), mozjpeg(), optipng(), svgo(), imageminWebp()], { verbose: true }))
   .pipe(
     rename(p => {
       return { dirname: p.dirname, basename: p.basename, extname: '.webp' }

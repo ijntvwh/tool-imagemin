@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "esno index.mts",
+    "imagemin": "esno imagemin/index.mts",
     "sprites": "esno sprites/index.mts",
     "clear": "esno clear.ts",
     "cdn": "npx esno cdn/refresh.mts"

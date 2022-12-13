@@ -1,10 +1,12 @@
 import imagemin from 'imagemin'
 import imageminJpegtran from 'imagemin-jpegtran'
-// import imageminMozjpeg from 'imagemin-mozjpeg'
 import imageminPngquant from 'imagemin-pngquant'
+import { fileURLToPath } from 'node:url'
+import path from 'path'
 
-imagemin(['origin/*.{jpg,png}'], {
-  destination: 'dist',
-  // plugins: [imageminMozjpeg(), imageminPngquant({ strip: true })],
+const DIR = path.dirname(fileURLToPath(import.meta.url))
+
+imagemin([DIR + '/input/*.{jpg,png}'], {
+  destination: DIR + '/output',
   plugins: [imageminJpegtran(), imageminPngquant({ strip: true })],
 })

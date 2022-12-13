@@ -9,8 +9,8 @@ function removeDirFile(dir) {
     .forEach(f => fs.unlinkSync(f))
 }
 
-removeDirFile('dist')
-removeDirFile('origin')
+removeDirFile('imagemin/input')
+removeDirFile('imagemin/output')
 removeDirFile('sprites/input')
 removeDirFile('sprites/output')
 
