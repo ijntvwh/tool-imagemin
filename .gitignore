@@ -3,5 +3,7 @@ dist
 .DS_Store
 pnpm-lock.yaml
 /origin/*
-!/origin/.gitkeep
+/sprites/input
+/sprites/output
+!.gitkeep
 qiniu.env
